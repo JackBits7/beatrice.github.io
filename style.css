@@ -512,64 +512,72 @@ p {
 /*                                TESTIMONIALS                                */
 /* -------------------------------------------------------------------------- */
 .testimonials {
-    background-color: var(--color-white);
+    background-color: #ffffff;
+    /* Explicit color for Safari */
 }
 
 .testimonials-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: var(--spacing-md);
+    display: flex;
+    flex-wrap: wrap;
+    margin: -1rem;
+    /* Negative margin to counteract card padding */
 }
 
 .testimonial-card {
-    background-color: var(--color-bg-alt);
-    padding: var(--spacing-md);
+    flex: 1 1 300px;
+    margin: 1rem;
+    background-color: #f3f4f1;
+    /* Explicit color */
+    padding: 2rem;
     border-radius: 12px;
-    box-shadow: var(--shadow-sm);
-    transition: var(--transition-fast);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     border: 1px solid rgba(0, 0, 0, 0.03);
+    min-height: 250px;
+    /* Ensure consistent height in flex */
 }
 
 .testimonial-card:hover {
     transform: translateY(-5px);
-    box-shadow: var(--shadow-md);
-    background-color: var(--color-white);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    background-color: #ffffff;
 }
 
 .stars {
     color: #FFB347;
     /* Soft gold */
-    margin-bottom: var(--spacing-sm);
+    margin-bottom: 1rem;
     font-size: 0.9rem;
 }
 
 .testimonial-text {
     font-style: italic;
-    color: var(--color-text);
+    color: #333333;
     font-size: 1rem;
     line-height: 1.6;
     margin-bottom: 1.5rem;
+    flex-grow: 1;
 }
 
 .testimonial-author {
     display: flex;
     flex-direction: column;
     border-top: 1px solid rgba(0, 0, 0, 0.05);
-    padding-top: var(--spacing-sm);
+    padding-top: 1rem;
 }
 
 .author-name {
     font-weight: 600;
-    color: var(--color-primary);
+    color: #3A5A40;
     font-size: 1.1rem;
 }
 
 .review-source {
     font-size: 0.8rem;
-    color: var(--color-text-light);
+    color: #666666;
     display: flex;
     align-items: center;
     gap: 5px;
@@ -579,6 +587,20 @@ p {
 .review-source i {
     color: #4285F4;
     /* Google Blue */
+}
+
+/* Fallback for browsers that support Grid gap but let's stick to Flex for Safari safety here */
+@supports (display: grid) {
+    .testimonials-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+        margin: 0;
+    }
+
+    .testimonial-card {
+        margin: 0;
+    }
 }
 
 /* -------------------------------------------------------------------------- */
