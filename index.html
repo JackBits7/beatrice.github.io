@@ -38,7 +38,10 @@
     <!-- Header -->
     <header class="header" id="header">
         <div class="container header-container">
-            <a href="#" class="logo">Beatrice Garaud<span>.</span></a>
+            <a href="index.html" class="logo">
+                <img src="assets/logo.png" alt="Beatrice Garaud Logo" onerror="this.style.display='none'">
+                Beatrice Garaud<span>.</span>
+            </a>
 
             <nav class="nav">
                 <ul class="nav-list">
@@ -59,7 +62,7 @@
     <section id="home" class="hero">
         <div class="hero-bg"></div>
         <div class="container hero-content">
-            <span class="eyebrow fade-in">Osteopata D.O. mROI</span>
+            <span class="eyebrow fade-in" style="text-transform: none;">Osteopata D.O. MSc ROI</span>
             <h1 class="fade-in delay-1">Il tuo benessere <br>attraverso il tocco</h1>
             <p class="fade-in delay-2">Un approccio terapeutico manuale e naturale per ritrovare l'equilibrio del tuo
                 corpo. Specializzata in pediatria, sport e gravidanza.</p>
@@ -76,30 +79,31 @@
             <div class="about-image scroll-reveal left">
                 <!-- Placeholder for profile image -->
                 <div class="img-frame">
-                    <img src="https://osteopatabeatricegaraud.com/wp-content/uploads/2023/01/Beatrice-Garaud-Osteopata-scaled.jpg"
-                        alt="Beatrice Garaud Osteopata"
-                        onerror="this.src='https://images.unsplash.com/photo-1559839734-2b71ea197ec2?q=80&w=2070&auto=format&fit=crop'">
+                    <img src="assets/foto_profilo.png" alt="Beatrice Garaud Osteopata">
                 </div>
             </div>
             <div class="about-text scroll-reveal right">
-                <h2 class="section-title">Chi Sono</h2>
-                <h3 class="subtitle">Beatrice Garaud, BSc.Ost-Hons, MSc.Ost</h3>
-                <p>Mi sono laureata all’International College of Osteopathic Medicine dopo un percorso formativo
-                    full-time di 5 anni, ottenendo il titolo di <strong>BSc.Ost-Hons</strong> e successivamente un
-                    Master <strong>MSc.Ost in Osteopatia Pediatrica e Sportiva</strong>.</p>
-                <p>Il mio approccio è globale: non curo solo il sintomo, ma cerco la causa primaria del dolore,
-                    analizzando il corpo nella sua interezza biomeccanica, viscerale e cranio-sacrale.</p>
-                <p>Ascolto i tessuti e accompagno i miei pazienti verso un percorso di autoguarigione e consapevolezza
-                    corporea.</p>
+                <div class="service-detail-block" style="margin-bottom: 0; height: 100%;">
+                    <h2 class="section-title text-left" style="text-align: left; margin-bottom: 2rem;">Chi Sono</h2>
+                    <h3 class="subtitle">Beatrice Garaud</h3>
+                    <p>Mi sono laureata all’International College of Osteopathic Medicine dopo un percorso formativo
+                        full-time di 5 anni, ottenendo il titolo di <strong>BSc.Ost-Hons</strong> e successivamente un
+                        Master <strong>MSc.Ost in Osteopatia Pediatrica e Sportiva</strong>.</p>
+                    <p>Il mio approccio è globale: non curo solo il sintomo, ma cerco la causa primaria del dolore,
+                        analizzando il corpo nella sua interezza biomeccanica, viscerale e cranio-sacrale.</p>
 
-                <div class="credentials">
-                    <div class="credential-item">
-                        <i class="fas fa-graduation-cap"></i>
-                        <span>Laurea ICOM 5 anni</span>
+                    <div class="credentials">
+                        <div class="credential-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span>Laurea ICOM 5 anni</span>
+                        </div>
+                        <div class="credential-item">
+                            <i class="fas fa-certificate"></i>
+                            <span>Master in Pediatria e Sport</span>
+                        </div>
                     </div>
-                    <div class="credential-item">
-                        <i class="fas fa-certificate"></i>
-                        <span>Master in Pediatria</span>
+                    <div style="margin-top: 2rem;">
+                        <a href="chi-sono.html" class="btn btn-primary">Scopri il mio percorso</a>
                     </div>
                 </div>
             </div>
@@ -116,6 +120,9 @@
                     genera.</p>
                 <p>Attraverso una precisa raccolta anamnestica e un esame obiettivo, l’osteopata ripristina la mobilità
                     dei tessuti permettendo al corpo di ritrovare il suo naturale equilibrio.</p>
+                <div style="margin-top: 2rem;">
+                    <a href="osteopatia.html" class="btn btn-white">Scopri di più</a>
+                </div>
             </div>
         </div>
     </section>
@@ -139,26 +146,26 @@
 
                 <!-- Card 2 -->
                 <div class="card scroll-reveal bottom delay-2">
-                    <div class="card-icon"><i class="fas fa-running"></i></div>
-                    <h3>Osteopatia Sportiva</h3>
-                    <p>Prevenzione degli infortuni, miglioramento delle prestazioni e recupero post-traumatico. Un
-                        supporto fondamentale per l'atleta amatoriale e professionista.</p>
-                </div>
-
-                <!-- Card 3 -->
-                <div class="card scroll-reveal bottom delay-3">
                     <div class="card-icon"><i class="fas fa-baby"></i></div>
                     <h3>Età Pediatrica</h3>
                     <p>Tecniche dolci per accompagnare lo sviluppo fisiologico del bambino, dai primi giorni di vita
                         fino all'adolescenza. Utile per coliche, disturbi del sonno e posture scorrette.</p>
                 </div>
 
-                <!-- Card 4 -->
-                <div class="card scroll-reveal bottom delay-4">
+                <!-- Card 3 -->
+                <div class="card scroll-reveal bottom delay-3">
                     <div class="card-icon"><i class="fas fa-person-pregnant"></i></div>
                     <h3>Gravidanza</h3>
                     <p>Supporto alla futura mamma per alleviare mal di schiena, sciatalgie e preparare il bacino al
                         parto, garantendo benessere a mamma e bambino.</p>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="card scroll-reveal bottom delay-4">
+                    <div class="card-icon"><i class="fas fa-running"></i></div>
+                    <h3>Osteopatia Sportiva</h3>
+                    <p>Prevenzione degli infortuni, miglioramento delle prestazioni e recupero post-traumatico. Un
+                        supporto fondamentale per l'atleta amatoriale e professionista.</p>
                 </div>
 
                 <!-- Card 5 -->
@@ -168,6 +175,9 @@
                     <p>Supporto per mantenere la mobilità, ridurre la rigidità articolare e migliorare la qualità della
                         vita, contrastando i dolori legati all'età.</p>
                 </div>
+            </div>
+            <div class="text-center" style="margin-top: 3rem;">
+                <a href="trattamenti.html" class="btn btn-primary">Vedi tutti i dettagli</a>
             </div>
         </div>
     </section>
@@ -207,9 +217,8 @@
                     </div>
 
                     <div class="social-links">
-                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://wa.me/393792097542" class="social-icon" target="_blank"><i
+                                class="fab fa-whatsapp"></i></a>
                     </div>
                 </div>
 
@@ -231,8 +240,8 @@
                     Osteopata Beatrice Garaud
                 </div>
                 <div class="footer-links">
-                    <a href="#">Privacy Policy</a>
-                    <a href="#">Cookie Policy</a>
+                    <a href="privacy-policy.html">Privacy Policy</a>
+                    <a href="cookie-policy.html">Cookie Policy</a>
                 </div>
                 <div class="footer-copy">
                     &copy;

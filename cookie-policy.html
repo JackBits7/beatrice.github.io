@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookie Policy | Osteopata Beatrice Garaud</title>
+    <meta name="robots" content="noindex">
+
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Montserrat:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <img src="assets/logo.png" alt="Beatrice Garaud Logo" onerror="this.style.display='none'">
+                Beatrice Garaud<span>.</span>
+            </a>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="chi-sono.html" class="nav-link">Chi Sono</a></li>
+                    <li><a href="osteopatia.html" class="nav-link">L'Osteopatia</a></li>
+                    <li><a href="trattamenti.html" class="nav-link">Trattamenti</a></li>
+                    <li><a href="contatti.html" class="nav-link btn-contact">Contatti</a></li>
+                </ul>
+                <div class="mobile-toggle" id="mobile-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="fade-in">Cookie Policy</h1>
+            <p class="fade-in delay-1">Informativa sull'utilizzo dei cookie</p>
+        </div>
+    </section>
+
+    <!-- Content Section -->
+    <section class="section" style="background-color: var(--color-bg-alt);">
+        <div class="container">
+            <div class="service-detail-block fade-in">
+                <div class="service-body">
+                    <h3>1. Cosa sono i Cookie</h3>
+                    <p>I cookie sono brevi frammenti di testo (lettere e/o numeri) che permettono al server web di
+                        memorizzare sul client (il browser) informazioni da riutilizzare nel corso della medesima visita
+                        al sito (cookie di sessione) o in seguito, anche a distanza di giorni (cookie persistenti).</p>
+
+                    <h3>2. Tipologie di Cookie utilizzati</h3>
+                    <p>Questo sito utilizza le seguenti categorie di cookie:</p>
+                    <ul class="check-list" style="margin-bottom: 1.5rem;">
+                        <li><strong>Cookie Tecnici:</strong> Sono quelli strettamente necessari per il corretto
+                            funzionamento del sito web. Hanno la funzione, ad esempio, di permettere la visualizzazione
+                            dei contenuti o il corretto caricamento delle pagine.</li>
+                        <li><strong>Cookie di Terze Parti:</strong> Visitando un sito web si possono ricevere cookie sia
+                            dal sito visitato ("proprietari"), sia da siti gestiti da altre organizzazioni ("terze
+                            parti"). In questo sito sono presenti servizi di terze parti come:
+                            <ul
+                                style="margin-left: 20px; list-style-type: disc; margin-top: 10px; color: var(--color-text-light);">
+                                <li><strong>Google Fonts:</strong> servizio per visualizzazione di stili di carattere
+                                    gestito da Google Inc.</li>
+                                <li><strong>Google Maps:</strong> servizio per visualizzazione di mappe gestito da
+                                    Google Inc.</li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <h3>3. Gestione dei Cookie</h3>
+                    <p>L'utente può decidere se accettare o meno i cookie utilizzando le impostazioni del proprio
+                        browser. Di seguito i link alle istruzioni per i browser più comuni:</p>
+                    <ul class="check-list" style="margin-bottom: 1.5rem;">
+                        <li><a href="https://support.google.com/chrome/answer/95647?hl=it" target="_blank"
+                                style="text-decoration: underline;">Chrome</a></li>
+                        <li><a href="https://support.mozilla.org/it/kb/Gestione%20dei%20cookie" target="_blank"
+                                style="text-decoration: underline;">Firefox</a></li>
+                        <li><a href="https://support.apple.com/it-it/guide/safari/sfri11471/mac" target="_blank"
+                                style="text-decoration: underline;">Safari</a></li>
+                        <li><a href="https://support.microsoft.com/it-it/microsoft-edge/eliminare-i-cookie-in-microsoft-edge-63947406-40ac-c3b8-57b9-2a946a29ae09"
+                                target="_blank" style="text-decoration: underline;">Edge</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="text-center" style="margin-top: 2rem;">
+                <a href="index.html" class="btn btn-primary">Torna alla Home</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    Osteopata Beatrice Garaud
+                </div>
+                <div class="footer-links">
+                    <a href="privacy-policy.html">Privacy Policy</a>
+                    <a href="cookie-policy.html">Cookie Policy</a>
+                </div>
+                <div class="footer-copy">
+                    &copy;
+                    <script>document.write(new Date().getFullYear())</script> Beatrice Garaud. All rights reserved.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/scrollreveal"></script>
+    <script>
+        const header = document.getElementById('header');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        const mobileToggle = document.getElementById('mobile-toggle');
+        const navList = document.querySelector('.nav-list');
+        mobileToggle.addEventListener('click', () => {
+            navList.classList.toggle('active');
+        });
+
+        ScrollReveal().reveal('.fade-in', {
+            delay: 200,
+            duration: 800,
+            reset: false
+        });
+    </script>
+</body>
+
+</html>

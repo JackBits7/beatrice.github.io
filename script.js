@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    
+
     // --------------------------------------------------------------------------
     // Mobile Menu Toggle
     // --------------------------------------------------------------------------
@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (mobileToggle) {
         mobileToggle.addEventListener('click', () => {
             nav.classList.toggle('active');
-            
+
             // Toggle hamburger icon animation (optional switch to X)
             const icon = mobileToggle.querySelector('i');
             if (nav.classList.contains('active')) {
@@ -38,19 +38,28 @@ document.addEventListener('DOMContentLoaded', () => {
     // --------------------------------------------------------------------------
     // Scroll Reveal Animations
     // --------------------------------------------------------------------------
+    // --------------------------------------------------------------------------
+    // Scroll Reveal Animations
+    // --------------------------------------------------------------------------
     const revealElements = document.querySelectorAll('.scroll-reveal');
+
+    // Add hidden class initially via JS (prevents white page if JS fails)
+    revealElements.forEach(el => {
+        el.classList.add('reveal-hidden');
+    });
 
     const revealObserver = new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
+                entry.target.classList.remove('reveal-hidden');
                 entry.target.classList.add('active');
-                observer.unobserve(entry.target); // Only animate once
+                observer.unobserve(entry.target);
             }
         });
     }, {
         root: null,
-        threshold: 0.15, // Trigger when 15% of element is visible
-        rootMargin: "0px"
+        threshold: 0.1, // Lower threshold for better triggering
+        rootMargin: "0px 0px -50px 0px" // Slightly offset bottom to trigger earlier
     });
 
     revealElements.forEach(el => {
@@ -61,7 +70,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Header Scroll Effect
     // --------------------------------------------------------------------------
     const header = document.querySelector('.header');
-    
+
     window.addEventListener('scroll', () => {
         if (window.scrollY > 50) {
             header.style.padding = "0.5rem 0";
@@ -80,13 +89,13 @@ document.addEventListener('DOMContentLoaded', () => {
             e.preventDefault();
             const targetId = this.getAttribute('href');
             const targetElement = document.querySelector(targetId);
-            
+
             if (targetElement) {
                 // Account for fixed header height
                 const headerOffset = 80;
                 const elementPosition = targetElement.getBoundingClientRect().top;
                 const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-      
+
                 window.scrollTo({
                     top: offsetPosition,
                     behavior: "smooth"
