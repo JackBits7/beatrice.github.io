@@ -759,6 +759,7 @@ p {
 
     .mobile-toggle {
         display: block;
+        padding-right: 0.5rem;
     }
 
     .nav {
