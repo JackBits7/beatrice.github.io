@@ -839,6 +839,23 @@ p {
         padding: var(--spacing-lg) 0;
     }
 
+    /* FIX: Reduce logo size on mobile to prevent overflow */
+    .logo {
+        font-size: 1.4rem;
+        /* Reduced from default */
+        gap: 6px;
+    }
+
+    .logo img {
+        height: 50px;
+        /* Drastically reduced from 120px/100px */
+    }
+
+    /* FIX: Adjust header padding for more space */
+    .header-container {
+        padding: 0 1rem;
+    }
+
     h1 {
         font-size: 2rem;
     }
